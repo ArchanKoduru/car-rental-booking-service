@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+server:
+  port: 8080
+
+external:
+  driving-license-api: ${EXTERNAL_DRIVING_LICENSE_API:http://driving-license-service:8082/license/details}
+  car-pricing-api: ${EXTERNAL_CAR_PRICING_API:http://car-pricing-service:8081/rental/rate}

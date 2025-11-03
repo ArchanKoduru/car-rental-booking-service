@@ -1,0 +1,4 @@
+rootProject.name = 'car-rental-assignment'
+include 'booking-service'
+include 'driving-license-service'
+include 'car-pricing-service'

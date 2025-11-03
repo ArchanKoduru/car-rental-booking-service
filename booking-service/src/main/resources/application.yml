@@ -1,0 +1,18 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    driverClassName: org.h2.Driver # default for dev, overridden in prod
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update # dev-friendly default
+  h2:
+    console:
+      enabled: true
+
+logging:
+  level:
+    root: INFO
+    com.xyz.carrental.booking: DEBUG
